@@ -6,6 +6,8 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.utils.translation import gettext_lazy as _
 
+from core.models import Autor, Categoria, Editora, Livro
+
 from core import models
 
 
@@ -36,7 +38,7 @@ class UserAdmin(BaseUserAdmin):
         (
             None,
             {
-                'classes': ('wide',),
+           como saber se o fone sem fio quebrou o que fazer     'classes': ('wide',),
                 'fields': (
                     'email',
                     'password1',
